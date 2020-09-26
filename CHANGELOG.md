@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.6.0](https://www.github.com/jef/nvidia-snatcher/compare/v1.5.0...v1.6.0) (2020-09-26)
+
+
+### Features
+
+* **notification:** add `to` field for email ([#327](https://www.github.com/jef/nvidia-snatcher/issues/327)) ([8828dd1](https://www.github.com/jef/nvidia-snatcher/commit/8828dd15cd08959cd434bd256e8eac474dd17c49))
+* add `norway` to `nvidia-api` ([#304](https://www.github.com/jef/nvidia-snatcher/issues/304)) ([eda6c85](https://www.github.com/jef/nvidia-snatcher/commit/eda6c85fc03a70c5933308e96c572a480bb6c8a0))
+* enhanced lookup behaviour ([#270](https://www.github.com/jef/nvidia-snatcher/issues/270)) ([b868d1a](https://www.github.com/jef/nvidia-snatcher/commit/b868d1a4833a8ec5ac1c79481530d75cd0c4b01e))
+* low bandwidth mode ([#294](https://www.github.com/jef/nvidia-snatcher/issues/294)) ([0aa7ab5](https://www.github.com/jef/nvidia-snatcher/commit/0aa7ab596c907ce72c188eb4b1acdee088307437))
+* **notification:** add pushover priority setting ([#186](https://www.github.com/jef/nvidia-snatcher/issues/186)) ([f277172](https://www.github.com/jef/nvidia-snatcher/commit/f2771721914a20619833df8ccb2ac44298687b4d))
+* **store:** add `pny` ([#295](https://www.github.com/jef/nvidia-snatcher/issues/295)) ([f6760d3](https://www.github.com/jef/nvidia-snatcher/commit/f6760d3c65d60eae9e4b1e0fdba34e814f446a4c))
+* in stock wait time per link now ([c7a716f](https://www.github.com/jef/nvidia-snatcher/commit/c7a716f981976a76afe61a4d985bd6fe4343595b))
+* **store:** add 3090s to amazon-ca ([#274](https://www.github.com/jef/nvidia-snatcher/issues/274)) ([e992cf4](https://www.github.com/jef/nvidia-snatcher/commit/e992cf4db85f045fc8d03c9b93286fb72bad1061))
+* **store:** add additional cards to all stores ([#286](https://www.github.com/jef/nvidia-snatcher/issues/286)) ([d25a643](https://www.github.com/jef/nvidia-snatcher/commit/d25a643425020fa3f7cd48972360ede17501afeb))
+* **store:** add amazon cards and `cartUrl`s ([#284](https://www.github.com/jef/nvidia-snatcher/issues/284)) ([d69189f](https://www.github.com/jef/nvidia-snatcher/commit/d69189f12c893fb6d88b198d802ff8e36a69bc88))
+
+
+### Bug Fixes
+
+* in stock wait time ([#325](https://www.github.com/jef/nvidia-snatcher/issues/325)) ([07bd246](https://www.github.com/jef/nvidia-snatcher/commit/07bd246e876cd27df1b5019af5ee8613bb5368f0)), closes [#315](https://www.github.com/jef/nvidia-snatcher/issues/315)
+* **env:** default `LOG_LEVEL` ([9636572](https://www.github.com/jef/nvidia-snatcher/commit/9636572c7de36f7ac6800ba31ac60fcd7bd2fd03))
+* **notification:** sms subject output ([#298](https://www.github.com/jef/nvidia-snatcher/issues/298)) ([03755d5](https://www.github.com/jef/nvidia-snatcher/commit/03755d5eb117ac14797e0180c74f50b401e50cb5))
+* `nvidia-api` ([#314](https://www.github.com/jef/nvidia-snatcher/issues/314)) ([8d8e5b5](https://www.github.com/jef/nvidia-snatcher/commit/8d8e5b587d2279a95d3e7837a99bea8c5990a477))
+* add `amazon-nl`, captcha `amazon-de`, add ftw3 `newegg` ([#293](https://www.github.com/jef/nvidia-snatcher/issues/293)) ([a2983eb](https://www.github.com/jef/nvidia-snatcher/commit/a2983eb54c419ba3a56abf80d316ea136a05e0fa))
+* denver `microcenter` name ([#296](https://www.github.com/jef/nvidia-snatcher/issues/296)) ([349f55d](https://www.github.com/jef/nvidia-snatcher/commit/349f55d3603517b5741fce6ac42b29141816ea79))
+
 ## [1.5.0](https://www.github.com/jef/nvidia-snatcher/compare/v1.4.0...v1.5.0) (2020-09-24)
 
 
