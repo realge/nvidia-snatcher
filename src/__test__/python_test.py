@@ -6,8 +6,8 @@ def read_in():
 
 def main():
     data = read_in()
-    print('Python script received data!')
-    print(data['url'])
+    brand, series, model, url = data['brand'], data['series'], data['model'], data['url']
+    print('Notification: {} {} series {} at {}'.format(brand, model, series, url))
 
 # Start process
 if __name__ == '__main__':
