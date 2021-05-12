@@ -1,4 +1,4 @@
-from main import purchase
+from main_windows import purchase
 
 url = 'https://www.amazon.com/CSB-Invitation-Testament-Bibles-Holman/dp/1433644320/'
 purchase(url)

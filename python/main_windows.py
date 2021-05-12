@@ -26,7 +26,13 @@ def money(number):
     return price
 
 def purchase(item_url):
-    amazon.login(password=config.AMAZON_PASSWORD, email=config.AMAZON_EMAIL)
+    price = amazon.product_info(product_url=item_url)['body']['price']
+    if price > config.PRICE_LIMIT:
+        print('Price of {} is too high')
+    else:
+        print('Buying for price of {}')
+
+    amazon.login(email=config.AMAZON_EMAIL, password=config.AMAZON_PASSWORD)
     amazon.buy(product_url=item_url)
     amazon.select_payment_method(payment_method=config.PAYMENT_METHOD)
     amazon.fill_cvv(cvv=config.CVV)
