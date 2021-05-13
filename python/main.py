@@ -30,7 +30,9 @@ def money(number):
 
 def purchase(ITEM_URL):
     try:
-        browser = webdriver.Chrome('.\chromedriver.exe')
+        options = Options()
+        options.add_argument("user-data-dir=C:\\Users\\13667\\AppData\\Local\\Google\\Chrome\\User Data")
+        browser = webdriver.Chrome('.\chromedriver.exe', chrome_options=options)
         browser.get(ITEM_URL)
         log('Visiting {}'.format(ITEM_URL))
         sleep(0.1)
