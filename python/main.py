@@ -30,10 +30,10 @@ def money(number):
 
 def purchase(ITEM_URL):
     try:
-        browser = webdriver.Chrome('./chromedriver')
+        browser = webdriver.Chrome('.\chromedriver.exe')
         browser.get(ITEM_URL)
         log('Visiting {}'.format(ITEM_URL))
-        sleep(10)
+        sleep(0.1)
     except:
         log('Failed to open browser.')
         exit()
@@ -41,28 +41,28 @@ def purchase(ITEM_URL):
     # Add to cart
     browser.find_element_by_id('add-to-cart-button').click()
     log('Adding to cart')
-    sleep(10)
+    sleep(0.1)
 
     # Proceed to checkout
     browser.get('https://www.amazon.com/gp/cart/view.html?ref_=nav_cart')
     browser.find_element_by_name('proceedToRetailCheckout').click()
     log('Proceeding to checkout')
-    sleep(10)
+    sleep(0.1)
 
     # Log in
     try:
         browser.find_element_by_id('ap_email').send_keys(AMAZON_EMAIL)
         log("Typed in email address")
-        sleep(2)
+        sleep(0.1)
         browser.find_element_by_id('continue').click()
         log("Continuing")
-        sleep(10)
+        sleep(0.1)
         browser.find_element_by_id('ap_password').send_keys(AMAZON_PASSWORD)
         log("Typed in password")
-        sleep(2)
+        sleep(0.1)
         browser.find_element_by_id('signInSubmit').click()
         log("Signing in")
-        sleep(10)
+        sleep(0.1)
     except:
         log('Already logged in')
         pass
@@ -80,13 +80,14 @@ def purchase(ITEM_URL):
     if money(price_txt) > PRICE_LIMIT:
         log('Price is too high, clearing cart')
         browser.get('https://www.amazon.com/gp/cart/view.html?ref_=nav_cart')
-        sleep(10)
+        sleep(0.1)
         browser.find_element_by_css_selector('.sc-action-delete input[value*=Delete]').click()
         return
 
     # Place order
-    b.find_element_by_css_selector('#placeYourOrder span .place-your-order-button').click()
+    browser.find_element_by_name('placeYourOrder1').click()
     log('Placed order')
+    sleep(5)
 
 def main():
     data = read_in()
